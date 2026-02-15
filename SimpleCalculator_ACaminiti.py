@@ -14,18 +14,32 @@ print(f"Hello {name} welcome to my simple calculator!! I hope this helps you wit
 
 # MATH PROBLEMS/CALCULATOR FUNCTIONS
 
-print("Enter Your First Number: ")
-first_number = input()
+first_number = int(input("Enter Your First Number: "))
 
-print("Enter Your Operator(ex. +, -, *, /): ")
-operator = input()
 
-print("Enter Your Second Number: ")
-second_number = input()
+# operator = input("Enter Your Operator(ex. +, -, *, /): ")
+# operator = input()
 
-# ADDITION
+second_number = int(input("Enter Your Second Number: "))
 
-print(first_number + second_number)
+
+# Operations
+
+if(first_number + second_number):
+    print(first_number + second_number)
+
+if(first_number - second_number):
+    print(first_number - second_number)
+
+if(first_number * second_number):
+    print(first_number * second_number)
+
+if(first_number / second_number):
+    print(first_number / second_number)
+
+
+
+
 
 
 
