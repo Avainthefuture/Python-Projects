@@ -18,28 +18,37 @@ print(f"Hello {name} Welcome To Number Guessing Game!!! Today You Will Have 5 At
 
 random_number = random.randint(1, 100)
 
+running = True
+
+actual_number = random_number 
+
+
+
 attempts = 5
 
 current_attempts = attempts - 1
 
 
+# ATTEMPTS WHILE LOOP
 
-# ATTEMPTS/MAIN PART
+user_guess = int(input("Enter A Number: "))
 
-int(input("Enter A Number: "))
+while(user_guess): 
+ print(current_attempts)
+ break
+else:
+ print("You have ran out of atttempts :(")
+
+#HIGHER/LOWER PART
+
+if user_guess < actual_number:
+ print("lower")
+
+else:
+ print("higher")
 
 
-i = 5
 
-while i < 5: 
- print()
- if i == 5:
-  break
- i += 1
+ print(attempts)
 
-
-# 
-
- if attempts >= 5:
-  print("You are out of attempts :(")
-  
+ 
