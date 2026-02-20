@@ -22,33 +22,39 @@ running = True
 
 actual_number = random_number 
 
+print(actual_number)
 
 
 attempts = 5
 
-current_attempts = attempts - 1
-
-
-# ATTEMPTS WHILE LOOP
-
-user_guess = int(input("Enter A Number: "))
-
-while(user_guess): 
- print(current_attempts)
- break
-else:
- print("You have ran out of atttempts :(")
-
-#HIGHER/LOWER PART
-
-if user_guess < actual_number:
- print("lower")
-
-else:
- print("higher")
 
 
 
- print(attempts)
+# ATTEMPTS WHILE LOOP 
+
+
+
+while running:
+    user_guess = int(input("Enter A Number: "))
+    # print(current_attempts)
+
+    if user_guess < actual_number:
+        print("higher")
+        current_attempts -= 1
+        continue
+
+
+    elif user_guess > actual_number: 
+        print("lower")
+    else:
+        print("you got it!!")
+        
+        continue
+
+
+
+
+    
+
 
  
